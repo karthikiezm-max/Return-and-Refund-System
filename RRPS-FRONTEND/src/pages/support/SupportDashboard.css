@@ -1,0 +1,33 @@
+.support-dashboard-page {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.support-kpis-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+
+@media (max-width: 1000px) {
+  .support-kpis-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.support-performance-card {
+  background: linear-gradient(135deg, #162444 0%, #101a33 100%);
+  border: 1px solid #233660;
+  border-radius: var(--radius-md);
+  padding: 16px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.perf-metric-val {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #38bdf8;
+}

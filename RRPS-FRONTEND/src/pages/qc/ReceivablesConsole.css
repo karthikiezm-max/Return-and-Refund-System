@@ -1,0 +1,15 @@
+.qc-console-page {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.scanner-launch-banner {
+  background: linear-gradient(135deg, #0b1a38 0%, #0d152a 100%);
+  border: 1px solid #1e3a6d;
+  border-radius: var(--radius-lg);
+  padding: 18px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

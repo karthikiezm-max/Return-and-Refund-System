@@ -1,0 +1,27 @@
+.platform-layout {
+  display: flex;
+  min-height: calc(100vh - 64px);
+  background-color: var(--bg-main);
+}
+
+.platform-main-viewport {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  overflow-y: auto;
+}
+
+.platform-content-inner {
+  padding: 24px 32px;
+  flex: 1;
+  max-width: 1440px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .platform-content-inner {
+    padding: 16px;
+  }
+}

@@ -1,0 +1,14 @@
+package com.rrps.enums;
+
+public enum ReturnEventType {
+    RETURN_INITIATED,
+    PICKUP_SCHEDULED,
+    PICKED_UP,
+    RECEIVED,
+    QC_DONE,
+    REFUND_INITIATED,
+    REFUNDED,
+    EXCHANGE_DISPATCHED,
+    RETURN_CANCELLED,
+    RETURN_CLOSED
+}

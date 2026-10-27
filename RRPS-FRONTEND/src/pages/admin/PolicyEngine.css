@@ -1,0 +1,13 @@
+.policy-engine-page {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.policy-table-box {
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-card);
+}

@@ -1,0 +1,16 @@
+.rtm-page {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.rtm-header-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  padding: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: var(--shadow-card);
+}

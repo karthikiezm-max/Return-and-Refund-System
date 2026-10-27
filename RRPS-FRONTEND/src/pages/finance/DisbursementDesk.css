@@ -1,0 +1,18 @@
+.disbursement-page {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.liability-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-bottom: 4px;
+}
+
+@media (max-width: 900px) {
+  .liability-stats-grid {
+    grid-template-columns: 1fr;
+  }
+}

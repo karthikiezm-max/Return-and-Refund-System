@@ -1,0 +1,186 @@
+.track-return-page {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.track-selector-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 8px;
+}
+
+.track-pill-tab {
+  background: #141f33;
+  border: 1px solid var(--border-subtle);
+  color: #94a3b8;
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding: 8px 16px;
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  transition: all 0.2s;
+  font-family: var(--font-mono);
+}
+
+.track-pill-tab:hover {
+  background: #1c2c47;
+  color: #f1f5f9;
+}
+
+.track-pill-tab.active {
+  background: #2563eb;
+  border-color: #38bdf8;
+  color: white;
+  box-shadow: 0 0 15px rgba(37, 99, 235, 0.4);
+}
+
+.track-content-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 24px;
+}
+
+@media (max-width: 900px) {
+  .track-content-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Item Details card */
+.item-details-box {
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.item-details-title {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #ffffff;
+  border-bottom: 1px solid var(--border-subtle);
+  padding-bottom: 12px;
+}
+
+.detail-row {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.detail-row-label {
+  font-size: 0.72rem;
+  color: #64748b;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.detail-row-value {
+  font-size: 0.9rem;
+  color: #f1f5f9;
+}
+
+/* Milestone Stepper Timeline */
+.milestone-timeline-box {
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.timeline-list {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin-top: 10px;
+}
+
+.timeline-step {
+  display: flex;
+  gap: 18px;
+  position: relative;
+  padding-bottom: 28px;
+}
+
+.timeline-step:last-child {
+  padding-bottom: 0;
+}
+
+.timeline-step::before {
+  content: '';
+  position: absolute;
+  left: 15px;
+  top: 30px;
+  bottom: 0;
+  width: 2px;
+  background: #1c273e;
+}
+
+.timeline-step.completed::before {
+  background: #3b82f6;
+}
+
+.step-marker {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: #121c30;
+  border: 2px solid #223252;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #64748b;
+  z-index: 2;
+  flex-shrink: 0;
+}
+
+.timeline-step.completed .step-marker {
+  background: #2563eb;
+  border-color: #38bdf8;
+  color: white;
+}
+
+.timeline-step.current .step-marker {
+  background: #f59e0b;
+  border-color: #fbbf24;
+  color: white;
+  animation: pulse 1.8s infinite;
+}
+
+.step-content {
+  flex: 1;
+}
+
+.step-name {
+  font-size: 0.92rem;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 2px;
+}
+
+.step-desc {
+  font-size: 0.78rem;
+  color: #94a3b8;
+  line-height: 1.4;
+}
+
+.step-timestamp {
+  font-size: 0.7rem;
+  color: #64748b;
+  margin-top: 4px;
+  font-family: var(--font-mono);
+}
+
+@keyframes pulse {
+  0% { box-shadow: 0 0 0 0 rgba(245, 158, 11, 0.4); }
+  70% { box-shadow: 0 0 0 10px rgba(245, 158, 11, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(245, 158, 11, 0); }
+}
